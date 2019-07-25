@@ -7,4 +7,4 @@ class Baby(pygame.sprite.Sprite):
 
 
     def update(self):
-        self.rect.move_ip(self.speed)
+        super().update(self)
