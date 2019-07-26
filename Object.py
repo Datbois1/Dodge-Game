@@ -1,10 +1,10 @@
 import pygame
 
-class Baby(pygame.sprite.Sprite):
+class Object(pygame.sprite.Sprite):
     def __init__(self, image, pos):
         super().__init__()
-        self.Baby = pygame.Baby.load(image)
-        self.Baby = pygame.transform.scale(self.Baby, (70, 70))
+        self.image = pygame.image.load(image)
+        self.image = pygame.transform.scale(self.image, (70, 70))
         self.rect = self.image.get_rect()
         self.rect.center = pos
         self.speed = pygame.math.Vector2(0, 0)
